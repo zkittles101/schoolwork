@@ -14,6 +14,7 @@ $y$ in the equation.
 First order ODE's can be written as the implicit form $F(x,y.{y'})=0$ or in the explicit form of ${y'}=f(x,y)$
 
 Example:
+
 $$
 x^{-3}{y'}-4y^2=0\ (implicit\ form)\ \qquad {y'}=\frac{4y^2}{x^{-3}}=4y^2x^3\ (explicit\ form)\
 $$
@@ -24,6 +25,7 @@ $y=h(x)$ is called a solution of a given ODE for an open interval $a < x < b$ if
 Example: Verify that $y=c/x$ (with c being an arbitrary constant) is a solution of the ODE $x{y'}=-y$ for all $x \neq 0$.
 
 __Solution:__
+
 $$
 \begin{align}
 &y=c/x \\
@@ -32,6 +34,7 @@ $$
 &\boxed{x{y'}=-y}
 \end{align}
 $$
+
 From the above example, we observed that the solution contains an arbitrary
 constant $c$. Such solutions can be recalled as the __General Solution__ of
 an ODE. The opposite of this is a __Particular Solution__ of an ODE.
@@ -58,6 +61,7 @@ $$
 &\boxed{y(x)=5.7e^{3x}}
 \end{align}
 $$
+
 Therefore, the initial value of ${y'}=\frac{dy}{dx}=3y$ is $\boxed{y(x)=5.7e^{3x}}$
 
 ## 1.2 Separable ODEs
@@ -69,6 +73,7 @@ This is done by integrating both sides of the equation and ~~expressing~~  the e
 __Example:__ Separate the ODE ${y'}=1+y^2$
 
 __Solution:__
+
 $$
 \begin{align}
 &{y'}=1+y^2 \qquad \qquad \qquad write\ {y'}\ interms\ of\ \frac{dy}{dx}  \\
@@ -78,5 +83,7 @@ $$
 &{tan^{-1}(y)= x + C} \\
 &\boxed{y=tan(x+C)} \\
 \end{align}
+$$
+
 $$
 Therefore, the ODE ${y'}=1+y^2$ can be separated and written as $\boxed{y=tan(x+C)}$
