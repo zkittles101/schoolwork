@@ -85,5 +85,4 @@ $$
 \end{align}
 $$
 
-$$
 Therefore, the ODE ${y'}=1+y^2$ can be separated and written as $\boxed{y=tan(x+C)}$
