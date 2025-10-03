@@ -1,0 +1,331 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{textcomp, gensymb}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{titlesec}
+
+\geometry{a4paper, margin=1in}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+
+
+
+\begin{document}
+% =========================
+% TITLE PAGE
+% =========================
+\begin{titlepage}
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[line width=1pt]
+		([xshift=1cm,yshift=-1cm]current page.north west) rectangle
+		([xshift=-1cm,yshift=1cm]current page.south east);
+	\end{tikzpicture}
+	\vspace*{0.25cm}
+	\begin{center}
+		\Huge\textbf{Addis Ababa University} \\
+		\vspace{0.3cm}
+		\Large\textbf{College of Engineering and Built Environment} \\
+		\vspace{0.3cm}
+		\Large\textbf{School of Mechanical and Industrial Engineering} \\
+		\vspace{0.3cm}
+		\Large\textbf{Metrology Lab Report}
+
+		% \vspace{0.5cm}
+		\Large\textbf{"Indirect angle measurement on a V-Block"} \\
+		% \vspace{0.3cm}
+		% \large Lab Number: \\
+	\end{center}
+
+	% \vfill
+	\vspace{0.5cm}
+	\Large\textbf{Submitted by:} (Section 2)
+
+	\begin{center}
+		\begin{minipage}[t]{0.4\textwidth}
+			\centering
+			\textbf{Name} \\
+			Eyob Sintayehu \\
+			Moges Masrie\\
+			Benyam Abera\\
+			Yodit Gezahegn\\
+			Tamirat Haile\\
+			Mahlet Megeze\\
+			Hailemeskel Anagaw\\
+			Yonas Kehali\\
+		\end{minipage}
+		\hspace{2cm} % Space between columns
+		\begin{minipage}[t]{0.4\textwidth}
+			\centering
+			\textbf{ID. No.} \\
+			UGR/0284/15\\
+			UGR/7054/15\\
+			UGR/8393/15\\
+			UGR/5301/15\\
+			UGR/0279/15\\
+			UGR/7514/15\\
+			UGR/4122/15\\
+			UGR/8502/15\\
+		\end{minipage}
+	\end{center}
+	\vspace{0.5cm}
+	\raggedright
+	\Large\textbf{Submitted to:} Mr. Henok Z.
+
+	\textbf{Date of Experiment:} Friday, April 4, 2025
+
+	\textbf{Date of Submission:} Friday, April 11, 2025
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% =========================
+% OBJECTIVE
+% =========================
+\section{Objective}
+The objective of this experiment is to determine the angle of a V-block using indirect measurement techniques. The process involves using a Vernier caliper, Vernier height gauge, and rollers to obtain precise dimensional measurements. These values are then used to calculate the included angle of the V-block using geometric relationships and trigonometric principles.
+
+
+% =========================
+% APPARATUS AND INSTRUMENTS
+% =========================
+\section{Apparatus and Instruments Used}
+\begin{itemize}
+	\item Vernier Caliper (0.02 mm)
+	\item Vernier Height Guage (0.05 mm)
+	\item Rollers
+	\item V-block
+	      % Add or remove items as needed
+\end{itemize}
+% =========================
+% THEORY
+% =========================
+\section{Theory}
+For when its not impractical or impossible to take measurements directly, we typically opt for indirect methods which involve the use of geometrical and mathematical relations. This technique can also be used on out case of measuring the angle of a V-block. This experiment focuses on determining the included angle of a V-block by measuring the heights of rollers placed within the V-groove and applying trigonometric calculations.
+
+When a cylindrical roller is placed inside a V-block, its center lies along the bisector of the included angle. By placing two rollers of known diameters ($d_1$ and $d_2$) sequentially into the V-groove and measuring the corresponding vertical distances from the reference surface to the top of each roller ($h_1$ and $h_2$), the angle can be calculated indirectly.
+
+The centers of both rollers lie on the same bisector, forming a right triangle between them. The vertical leg of the triangle is the difference in measured heights, ($h_2-h_1$) and the hypotenuse corresponds to half the difference in roller diameters, $(d_2-d_1)/2$
+
+Using trigonometric relations:
+
+$$
+	sin \left(\frac{\theta}{2} \right) = \frac{h_2-h_1}{\frac{d_2-d_1}{2}}
+$$
+
+Solving for $\theta$ we get the final equation:
+
+$$
+	\theta = 2\cdot sin^{-1}\left(\frac{d_2-d_1}{2(h_2-h_1)-(d_2-d_1)} \right)
+$$
+% =========================
+% PROCEDURE
+% =========================
+\section{Procedure}
+
+\begin{enumerate}
+	\item The V-block was placed on a clean and level surface plate to ensure stability and measurement accuracy
+	\item The diameters of the rollers were measured using the Vernier caliper and noted for calculation purposes.
+	\item The height measurement of the V-block was also taken and noted for calculation using a Vernier height gauge.
+	\item The Vernier height gauge was used to measure the vertical distance  from the surface plate to the top of the roller. This measurement was recorded
+	\item The first roller was carefully removed, and a second roller of a different diameter was placed in the same position within the V-groove.
+	\item The height from the surface plate to the top of the second roller was measured using the Vernier height gauge and recorded.
+	\item A third roller was also placed on the V-groove and its height from the surface plate to the top of the roller was measured using the Vernier height guage and recorded.
+	\item The recorded values of the height and diameters from each roller were substituted into the derived formula to compute the included angle $\theta$ of the V-block.
+
+\end{enumerate}
+
+% =========================
+% OBSERVATIONS AND DATA
+% =========================
+\section{Observations and Data}
+\begin{table}[H]
+	\centering
+	\caption{Diameter measurement of the first roller ($d_1$)}
+	\begin{tabularx}{\textwidth}{c c c c X}
+		\toprule
+		\textbf{Trial No.} & \textbf{Main Scale (mm)} & \textbf{Vernier Scale} & \textbf{Least Count (mm)} & \textbf{Result (mm)} \\
+		\midrule
+		1                  & 25                       & 0                      & 0.05                      & 25                   \\
+		2                  & 25                       & 2                      & 0.05                      & 25.1                 \\
+		3                  & 25                       & 0                      & 0.05                      & 25                   \\
+		% Add rows as needed
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\textbf{Average: $d_1$=25.03mm}
+
+\begin{table}[H]
+	\centering
+	\caption{Diameter measurement of the second roller ($d_2$)}
+	\begin{tabularx}{\textwidth}{ccccX}
+		\toprule
+		\textbf{Trial No.} & \textbf{Main Scale (mm)} & \textbf{Vernier Scale} & \textbf{Least Count (mm)} & \textbf{Result (mm)} \\
+		\midrule
+		1                  & 28                       & 0                      & 0.05                      & 28                   \\
+		2                  & 28                       & 0                      & 0.05                      & 28                   \\
+		3                  & 27                       & 19                     & 0.05                      & 27.95                \\
+		% Add rows as needed
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\textbf{Average: $d_2$=27.98mm}
+
+\begin{table}[H]
+	\centering
+	\caption{Diameter measurement of the third roller ($d_3$)}
+	\begin{tabularx}{\textwidth}{ccccX}
+		\toprule
+		\textbf{Trial No.} & \textbf{Main Scale (mm)} & \textbf{Vernier Scale} & \textbf{Least Count (mm)} & \textbf{Result (mm)} \\
+		\midrule
+		1                  & 20                       & 0                      & 0.05                      & 20                   \\
+		2                  & 20                       & 0                      & 0.05                      & 20                   \\
+		3                  & 20                       & 0                      & 0.05                      & 20                   \\
+		% Add rows as needed
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\textbf{Average: $d_3$=20mm}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Height measurement of the V-Block with Roller 1}
+	\begin{tabularx}{\textwidth}{ccccX}
+		\toprule
+		\textbf{Trial No.} & \textbf{Main Scale (mm)} & \textbf{Vernier Scale} & \textbf{Least Count (mm)} & \textbf{Result (mm)} \\
+		\midrule
+		1                  & 49                       & 45                     & 0.02                      & 49.9                 \\
+		2                  & 50                       & 0                      & 0.02                      & 50                   \\
+		3                  & 50                       & 1                      & 0.05                      & 50.02                \\
+		% Add rows as needed
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\textbf{Average: $h_1$=49.97mm}
+
+\begin{table}[H]
+	\centering
+	\caption{Height measurement of the V-Block with Roller 2}
+	\begin{tabularx}{\textwidth}{ccccX}
+		\toprule
+		\textbf{Trial No.} & \textbf{Main Scale (mm)} & \textbf{Vernier Scale} & \textbf{Least Count (mm)} & \textbf{Result (mm)} \\
+		\midrule
+		1                  & 53                       & 20                     & 0.02                      & 53.4                 \\
+		2                  & 53                       & 17                     & 0.02                      & 54.34                \\
+		3                  & 53                       & 14                     & 0.05                      & 53.48                \\
+		% Add rows as needed
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\textbf{Average: $h_2$=53.74mm}
+
+\begin{table}[H]
+	\centering
+	\caption{Height measurement of the V-Block with Roller 3}
+	\begin{tabularx}{\textwidth}{ccccX}
+		\toprule
+		\textbf{Trial No.} & \textbf{Main Scale (mm)} & \textbf{Vernier Scale} & \textbf{Least Count (mm)} & \textbf{Result (mm)} \\
+		\midrule
+		1                  & 43                       & 45                     & 0.02                      & 43.9                 \\
+		2                  & 43                       & 42                     & 0.02                      & 43.84                \\
+		3                  & 43                       & 43                     & 0.02                      & 43.86                \\
+		% Add rows as needed
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\textbf{Average: $h_3$=43.86mm}
+
+\begin{table}[H]
+	\centering
+	\caption{Height measurment of the V-Block}
+	\begin{tabularx}{\textwidth}{ccccX}
+		\toprule
+		\textbf{Trial No.} & \textbf{Main Scale (mm)} & \textbf{Vernier Scale} & \textbf{Least Count (mm)} & \textbf{Result (mm)} \\
+		\midrule
+		1                  & 44                       & 35                     & 0.02                      & 44.7                 \\
+		2                  & 44                       & 36                     & 0.02                      & 44.72                \\
+		3                  & 44                       & 35                     & 0.02                      & 44.7                 \\
+		4                  & 44                       & 36                     & 0.02                      & 44.72                \\
+		5                  & 44                       & 34                     & 0.02                      & 44.68                \\
+		6                  & 44                       & 36                     & 0.02                      & 44.72                \\
+		% Add rows as needed
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\textbf{Average: $h_{V}$=44.71mm}
+
+
+% =========================
+% CALCULATIONS
+% =========================
+\section{Results}
+Calculations were made using the derived formula for computing $\theta$ by substituting each measurements of height and diameter as a single pair
+\subsection{Using Roller 1 and Roller 2}
+
+\begin{align}
+	\theta & = 2\cdot sin^{-1}\left(\frac{d_2-d_1}{2(h_2-h_1)-(d_2-d_1)} \right)            \\
+	       & =2\cdot sin^{-1}\left(\frac{27.98-25.03}{2(53.74-49.97)-(27.98-25.03)} \right) \\
+	       & =2\cdot sin^{-1}\left(\frac{2.95}{7.54-2.95} \right)                           \\
+	\theta= 79.987 \degree
+\end{align}
+
+\subsection{Using Roller 2 and Roller 3}
+
+\begin{align}
+	\theta & = 2\cdot sin^{-1}\left(\frac{d_2-d_3}{2(h_2-h_3)-(d_2-d_3)} \right)      \\
+	       & =2\cdot sin^{-1}\left(\frac{27.98-20}{2(53.74-43.86)-(27.98-20)} \right) \\
+	       & =2\cdot sin^{-1}\left(\frac{7.98}{19.76-7.98} \right)                    \\
+	\theta= 85.284 \degree
+\end{align}
+
+\subsection{Using Roller 1 and Roller 3}
+
+\begin{align}
+	\theta & = 2\cdot sin^{-1}\left(\frac{d_1-d_3}{2(h_1-h_3)-(d_1-d_3)} \right)      \\
+	       & =2\cdot sin^{-1}\left(\frac{25.03-20}{2(49.97-43.86)-(25.03-20)} \right) \\
+	       & =2\cdot sin^{-1}\left(\frac{5.03}{12.22-5.03} \right)                    \\
+	\theta= 88.78 \degree
+\end{align}
+
+Taking the average of the 3 measurements, we get:
+\begin{align}
+	\theta=\frac{79.987+85.284+88.78}{3} \\
+	\boxed{\theta=84.35 \degree}
+\end{align}
+% RESULTS
+% =========================
+% \section*{7. Results}
+As per our measurements and calculations, we have measured the angle $\theta$ to be \boxed{84.35\degree}
+% =========================
+% DISCUSSION
+% =========================
+\section{Discussion}
+The experiment successfully demonstrated the use of indirect measurement techniques in determining the included angle of a V-block. By measuring the heights corresponding to two rollers of known diameters and applying trigonometric principles, the included angle was calculated to be approximately $\theta = 84.35\degree$.
+
+This aimed our discrepancies
+
+The use of indirect measurement relied on accurate height measurements using the vernier height gauge and consistent roller diameters measured using a vernier caliper.
+
+Minor discrepancies between repeated trials may have been mainly due to \textbf{parallax error} during height and diameter readings.
+
+Overall, the experiment reinforces the importance of proper measurement techniques and highlights the value of geometric reasoning in dimensional analysis.
+% =========================
+% CONCLUSION
+% =========================
+\section{Conclusion}
+This experiment aimed to determine the included angle of a V-block using an indirect measurement approach. By recording the heights corresponding to rollers of different diameters placed within the V-groove, and applying trigonometric calculations, the angle was successfully estimated.
+
+The final calculated angle was: \boxed{\theta=84.35\degree}
+
+The procedure demonstrated the effectiveness of indirect measurement methods in metrology when direct measurements are not feasible. The experiment also emphasized the importance of precise instrumentation and proper handling to minimize experimental error.
+\end{document}
+
