@@ -44,7 +44,7 @@ __Initial Value Problem__
 __Initial Condition:__ a condition given in the form of $y(x_o)=y_o$ with a given $(x_o,y_o)$ used to find the arbitrary value $c$.
 An initial value problem is an ODE together with an initial condition.
 
-__Example__: Solve the initial value for the problem ${y'}=\frac{dy}{dx}=3y$,$\quad y(0)=5.7$
+__Example__: Solve the initial value for the problem ${y'}=\frac{dy}{dx}=3y$, $\quad y(0)=5.7$
 
 __Solution:__
 
@@ -68,7 +68,7 @@ Therefore, the initial value of ${y'}=\frac{dy}{dx}=3y$ is $\boxed{y(x)=5.7e^{3x
 
 __Separable ODEs:__ are ODEs whose $x$ and $y$ parts can be separated into the two separate sides of the equation.
 
-This is done by integrating both sides of the equation and ~~expressing~~  the equation in terms of $y$.
+This is done by integrating both sides of the equation and expressing  the equation in terms of $y$.
 
 __Example:__ Separate the ODE ${y'}=1+y^2$
 
